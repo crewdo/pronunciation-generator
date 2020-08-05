@@ -32,5 +32,11 @@
   ],
   "web_accessible_resources": [
     "content/images/noter.png"
-  ]
+  ],
+  "icons": {
+    "128": "content/icon/icon128.png",
+    "16": "content/icon/icon16.png",
+    "32": "content/icon/icon32.png",
+    "48": "content/icon/icon48.png"
+  }
 }
