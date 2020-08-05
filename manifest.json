@@ -12,9 +12,11 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://*/*"],
-      "js": ["content/js/inject/noter.js"]
+      "run_at": "document_end",
+      "all_frames": false,
+      "js": ["content/js/inject/noter.js"],
+      "matches": [ "\u003Call_urls\u003E" ]
     }
   ],
-  "permissions": [ "http://*/*", "https://*/*", "activeTab" ]
+  "permissions": [ "http://*/*", "https://*/*", "activeTab", "tabs" ]
 }

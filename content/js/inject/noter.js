@@ -1,5 +1,4 @@
 try {
-    window.addEventListener("DOMContentLoaded", function () {
         if (!document.getElementById("bubbble")) {
             var elemAbs = document.createElement('div');
             elemAbs.innerHTML = '<img src="https://img.icons8.com/nolan/2x/google-translate.png" width="20px">';
@@ -8,7 +7,7 @@ try {
             document.body.appendChild(elemAbs);
         }
         var selectedText = "";
-        $(document.body).bind('mouseup', function (e) {
+        document.getElementsByTagName('body')[0].addEventListener('mouseup', function (e) {
             s = window.getSelection();
             if (s && s.rangeCount > 0) {
                 var oRange = s.getRangeAt(0);
@@ -39,7 +38,7 @@ try {
                 var formData = new FormData();
                 formData.append('message', selectedText);
                 formData.append('group_identifier', '19:96f28ca033654b35969720c3dafb9732@thread.skype');
-                fetch('http://english-noting.bot/', {
+                fetch('https://english-noting.bot/', {
                     method: 'POST',
                     body: formData
                 }).then(function (rs) {
@@ -93,6 +92,5 @@ try {
                 }
             }
         }
-    }, false);
 } catch (e) {
 }
