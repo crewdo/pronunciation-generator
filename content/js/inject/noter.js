@@ -50,7 +50,7 @@ try {
                     var formData = new FormData();
                     formData.append('message', selectedText);
                     formData.append('group_identifier', group.group_identifier);
-                    fetch('https://english-noting.bot/', {
+                    fetch('https://maximal-reserve-277114.ts.r.appspot.com/', {
                         method: 'POST',
                         body: formData
                     }).then(function (rs) {
