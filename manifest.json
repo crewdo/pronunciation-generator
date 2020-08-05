@@ -1,0 +1,20 @@
+{
+  "name": "Skype English Noting",
+  "description" : "Skype English Noting using a Skype Bot to send the translated message to a conversation",
+  "version": "1.0",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background/background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content/js/inject/noter.js"]
+    }
+  ],
+  "permissions": [ "http://*/*", "https://*/*", "activeTab" ]
+}
