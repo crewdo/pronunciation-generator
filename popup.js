@@ -1,15 +1,15 @@
 function saveChanges() {
     var conversationId = document.getElementById('group_identifier').value;
     if (!conversationId) {
-        console.log('Error: No value specified');
+        alert('Error: No value specified');
         return;
     }
     if (conversationId.indexOf('@thread.skype') === -1) {
-        console.log('Error: Conversation ID must contains "@thread.skype"');
+        alert('Error: Conversation ID must contains "@thread.skype"');
         return;
     }
     chrome.storage.sync.set({'group_identifier': conversationId}, function() {
-        console.log('Settings saved');
+        alert('Settings saved');
     });
 }
 

@@ -57,7 +57,7 @@ try {
                     });
                 }
                 else {
-                    console.log('Error: You have to set your Conversation ID')
+                    alert('Error: You have to set your Conversation ID')
                 }
             });
         }
