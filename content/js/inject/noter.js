@@ -5,7 +5,7 @@ try {
         var elemAbs = document.createElement('div');
         elemAbs.innerHTML = '<img src="' + iconUrl + '" width="20px">';
         elemAbs.id = 'bubbble';
-        elemAbs.style.cssText = 'background: white; position: absolute; top: -1000px; left: -1000px; z-index: 9999999999999; cursor: pointer; font-size: 8px; text-align: center';
+        elemAbs.style.cssText = 'background: white; border-radius: 56px; width: 23px; position: absolute; top: -1000px; left: -1000px; z-index: 9999999999999; cursor: pointer; font-size: 8px; text-align: center';
         document.body.appendChild(elemAbs);
     }
     var selectedText = "";
