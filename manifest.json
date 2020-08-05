@@ -28,7 +28,8 @@
     "http://*/*",
     "https://*/*",
     "activeTab",
-    "tabs"
+    "tabs",
+    "storage"
   ],
   "web_accessible_resources": [
     "content/images/noter.png", "content/images/connect.png", "popup.html"

@@ -45,13 +45,20 @@ try {
     document.getElementById('bubbble').addEventListener('click', function (e) {
         fadeOnClick();
         if (selectedText) {
-            var formData = new FormData();
-            formData.append('message', selectedText);
-            formData.append('group_identifier', '19:96f28ca033654b35969720c3dafb9732@thread.skype');
-            fetch('https://english-noting.bot/', {
-                method: 'POST',
-                body: formData
-            }).then(function (rs) {
+            chrome.storage.sync.get('group_identifier', function (group) {
+                if(group.hasOwnProperty('group_identifier')) {
+                    var formData = new FormData();
+                    formData.append('message', selectedText);
+                    formData.append('group_identifier', group.group_identifier);
+                    fetch('https://english-noting.bot/', {
+                        method: 'POST',
+                        body: formData
+                    }).then(function (rs) {
+                    });
+                }
+                else {
+                    console.log('Error: You have to set your Conversation ID')
+                }
             });
         }
     });

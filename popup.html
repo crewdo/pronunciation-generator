@@ -1,9 +1,17 @@
 <html>
 <head>
     <title>Skype English Noting - Quick setup</title>
+    <style>
+        input:focus {
+            outline: none;
+        }
+        .group_identifier::placeholder{
+            color: #c0c4b6;
+        }
+    </style>
 </head>
 <body>
-<div style="width: 430px; height: 430px ">
+<div style="width: 460px; height: 430px ">
     <div class="group-identifier-container" style="
     width: 100%;
     text-align: center;
@@ -22,7 +30,7 @@
                         font-size: 16px;
                         margin-top: 50px;
                     ">Conversation ID which Bot has been added</label>
-            <input name="group_identifier" class="group_identifier"  value="" placeholder="xx:xxxxxx@thread.skype" style="
+            <input name="group_identifier" id="group_identifier" class="group_identifier"  value="" placeholder="xx:xxxxxx@thread.skype" style="
             display: block;
             text-align: center;
                 width: 85%;
@@ -60,13 +68,6 @@
 
     </div>
 </div>
-<style>
-    input:focus {
-        outline: none;
-    }
-    .group_identifier::placeholder{
-        color: #c0c4b6;
-    }
-</style>
+<script src="popup.js"></script>
 </body>
 </html>
