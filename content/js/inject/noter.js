@@ -57,7 +57,8 @@ try {
                     });
                 }
                 else {
-                    alert('Error: You have to set your Conversation ID')
+                     chrome.runtime.sendMessage(null, 'missing-info', {}, function (rs) {
+                     })
                 }
             });
         }

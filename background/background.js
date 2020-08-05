@@ -16,3 +16,21 @@
 //
 //     });
 // });
+
+chrome.runtime.onMessage.addListener(function(request, sender, callback) {
+    if(request === 'missing-info'){
+        var icon = chrome.extension.getURL("content/images/noter.png");
+        chrome.notifications.create('missing-info',
+            {
+                type: "basic",
+                iconUrl: icon,
+                appIconMaskUrl: icon,
+                title: chrome.i18n.getMessage("appName"),
+                message: "Error: " + "You have to set your Conversation ID"
+            }, function () {});
+
+        Promise.resolve("").then(result => callback(result));
+        return true;
+
+    }
+});

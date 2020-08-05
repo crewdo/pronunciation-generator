@@ -29,7 +29,8 @@
     "https://*/*",
     "activeTab",
     "tabs",
-    "storage"
+    "storage",
+    "notifications"
   ],
   "web_accessible_resources": [
     "content/images/noter.png", "content/images/connect.png", "popup.html"
