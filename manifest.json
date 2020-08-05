@@ -1,10 +1,12 @@
 {
   "name": "Skype English Noting",
-  "description" : "Skype English Noting using a Skype Bot to send the translated message to a conversation",
+  "description": "Skype English Noting using a Skype Bot to send the translated message to a conversation",
   "version": "1.0",
   "manifest_version": 2,
   "background": {
-    "scripts": ["background/background.js"],
+    "scripts": [
+      "background/background.js"
+    ],
     "persistent": false
   },
   "browser_action": {
@@ -14,9 +16,21 @@
     {
       "run_at": "document_end",
       "all_frames": false,
-      "js": ["content/js/inject/noter.js"],
-      "matches": [ "\u003Call_urls\u003E" ]
+      "js": [
+        "content/js/inject/noter.js"
+      ],
+      "matches": [
+        "\u003Call_urls\u003E"
+      ]
     }
   ],
-  "permissions": [ "http://*/*", "https://*/*", "activeTab", "tabs" ]
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "activeTab",
+    "tabs"
+  ],
+  "web_accessible_resources": [
+    "content/images/noter.png"
+  ]
 }
