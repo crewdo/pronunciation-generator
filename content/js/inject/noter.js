@@ -59,6 +59,7 @@ try {
                 else {
                      chrome.runtime.sendMessage(null, 'missing-info', {}, function (rs) {
                      })
+
                 }
             });
         }
