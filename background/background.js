@@ -25,7 +25,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, callback) {
                 type: "basic",
                 iconUrl: icon,
                 title: chrome.i18n.getMessage("appName"),
-                message: "Error: You have to set your Conversation ID"
+                message: "Error: You have to configure your settings."
             }, function () {});
 
         Promise.resolve("").then(result => callback(result));

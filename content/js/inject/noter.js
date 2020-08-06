@@ -33,34 +33,37 @@ try {
         }
     });
 
-
     document.getElementById('bubbble').addEventListener('mouseover', function (e) {
         unfade();
     });
-
     document.getElementById('bubbble').addEventListener('mouseout', function (e) {
         fade();
     });
-
     document.getElementById('bubbble').addEventListener('click', function (e) {
         fadeOnClick();
         if (selectedText) {
-            chrome.storage.sync.get(['group_identifier', 'translate_status'], function (group) {
-                if(group.hasOwnProperty('group_identifier')) {
+            chrome.storage.sync.get(['group_identifier', 'translate_status', 'service_connector', 'hook_identifier', 'userid_identifier'], function (group) {
+                if(group.hasOwnProperty('service_connector')) {
                     var formData = new FormData();
                     formData.append('message', selectedText);
-                    formData.append('group_identifier', group.group_identifier);
-                    formData.append('translate_status', group.translate_status);
-                    fetch('https://maximal-reserve-277114.ts.r.appspot.com/', {
+                    formData.append('service_connector', group.service_connector);
+                    formData.append('translate_status', !!group.translate_status);
+                    if(group.service_connector === 'skype') {
+                        formData.append('group_identifier', group.group_identifier);
+                    }
+                    else {
+                        formData.append('hook_identifier', group.hook_identifier);
+                        formData.append('userid_identifier', group.userid_identifier);
+                    }
+                    // fetch('https://maximal-reserve-277114.ts.r.appspot.com/', {
+                    fetch('https://english-noting.bot/', {
                         method: 'POST',
                         body: formData
                     }).then(function (rs) {
                     });
                 }
                 else {
-                     chrome.runtime.sendMessage(null, 'missing-info', {}, function (rs) {
-                     })
-
+                    chrome.runtime.sendMessage(null, 'missing-info', {}, function (rs) {})
                 }
             });
         }
