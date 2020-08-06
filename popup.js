@@ -8,7 +8,8 @@ function saveChanges() {
         alert('Error: Conversation ID must contains "@thread.skype"');
         return;
     }
-    chrome.storage.sync.set({'group_identifier': conversationId}, function() {
+    console.log(!!document.getElementById('translate_status').checked);
+    chrome.storage.sync.set({'group_identifier': conversationId, 'translate_status' : !!document.getElementById('translate_status').checked}, function() {
         alert('Settings saved');
     });
 }

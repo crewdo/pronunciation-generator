@@ -45,11 +45,12 @@ try {
     document.getElementById('bubbble').addEventListener('click', function (e) {
         fadeOnClick();
         if (selectedText) {
-            chrome.storage.sync.get('group_identifier', function (group) {
+            chrome.storage.sync.get(['group_identifier', 'translate_status'], function (group) {
                 if(group.hasOwnProperty('group_identifier')) {
                     var formData = new FormData();
                     formData.append('message', selectedText);
                     formData.append('group_identifier', group.group_identifier);
+                    formData.append('translate_status', group.translate_status);
                     fetch('https://maximal-reserve-277114.ts.r.appspot.com/', {
                         method: 'POST',
                         body: formData
