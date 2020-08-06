@@ -55,8 +55,7 @@ try {
                         formData.append('hook_identifier', group.hook_identifier);
                         formData.append('userid_identifier', group.userid_identifier);
                     }
-                    // fetch('https://maximal-reserve-277114.ts.r.appspot.com/', {
-                    fetch('https://english-noting.bot/', {
+                    fetch('https://maximal-reserve-277114.ts.r.appspot.com/', {
                         method: 'POST',
                         body: formData
                     }).then(function (rs) {
