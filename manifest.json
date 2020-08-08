@@ -33,7 +33,7 @@
     "notifications"
   ],
   "web_accessible_resources": [
-    "content/images/noter.png", "content/images/connect.png", "content/images/connect_slack.png", "content/images/slack_member_id.gif", "popup.html"
+    "content/images/noter.png", "content/images/connect.png", "content/images/connect_slack.png", "content/images/ox.png", "content/images/cam.png", "content/images/slack_member_id.gif", "popup.html"
   ],
   "icons": {
     "128": "content/icon/icon128.png",

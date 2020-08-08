@@ -44,6 +44,7 @@ try {
         if (selectedText) {
             chrome.storage.sync.get(['group_identifier', 'translate_status', 'service_connector', 'hook_identifier', 'userid_identifier'], function (group) {
                 if(group.hasOwnProperty('service_connector')) {
+                    chrome.runtime.sendMessage(null, 'missing-info', {}, function (rs) {});
                     var formData = new FormData();
                     formData.append('message', selectedText);
                     formData.append('service_connector', group.service_connector);
