@@ -1,14 +1,14 @@
 try {
 
     if (!document.getElementById("bubbble")) {
-        var iconUrl = chrome.extension.getURL("content/images/noter.png");
+        var iconUrl = chrome.extension.getURL("content/images/note.png");
         var iconSpeakerUrl = chrome.extension.getURL("content/images/speaker.png");
         var elemAbs = document.createElement('div');
-        elemAbs.innerHTML = '<img style="margin-right: 4px" id="noter" src="' + iconUrl + '" width="20px">' +
+        elemAbs.innerHTML = '<img id="noter" src="' + iconUrl + '" width="18px">' +
             '<img id="speaker" src="' + iconSpeakerUrl + '" width="20px">';
 
         elemAbs.id = 'bubbble';
-        elemAbs.style.cssText = 'background: white; border-radius: 56px;height: 21px; width: 50px; position: absolute; top: -1000px; left: -1000px; z-index: 9999999999999; cursor: pointer; font-size: 8px; text-align: center';
+        elemAbs.style.cssText = 'background: white; border-radius: 56px;height: 21px; position: absolute; top: -1000px; left: -1000px; z-index: 9999999999999; cursor: pointer; font-size: 8px; text-align: center';
         document.body.appendChild(elemAbs);
     }
 
@@ -83,7 +83,7 @@ try {
                     if(rs.audio.length > 0 && rs.audio[0] !== false) {
                         var audio = new Audio("https://dictionary.cambridge.org" + rs.audio[1]);
                         audio.play();
-                        var objectNotification = processRegex(stripHtml(rs.data));
+                        var objectNotification = processCambridgeRegex(stripHtml(rs.data));
                         chrome.runtime.sendMessage(null, objectNotification, {}, function (rs) {});
                     }
                     else {
@@ -102,14 +102,45 @@ try {
         return tmp;
     }
 
-    function processRegex(element) {
+    function processCambridgeRegex(element)
+    {
+        console.log(element);
+        var theEntries = element.getElementsByClassName('entry-body');
+        //If one entry-body found, there is the same word on Cambridge
+        if(theEntries.length === 1){
+            return getCambridgeWordInfo(theEntries[0]);
+        }
+        //else more entries, the result will be simple present word.
 
-        return {cmd : 'phonetic-info', word: selectedText, type: "verb", 'phonetic' : '/asdasd/'};
+        else if(theEntries.length > 1) {
+
+            if(theEntries[0].querySelectorAll('.pron.dpron').length > 0) {
+                return getCambridgeWordInfo(theEntries[0]);
+            }
+            else {
+                return getCambridgeWordInfo(theEntries[1]);
+            }
+        }
+    }
+
+    function getCambridgeWordInfo(entryBodyElement) {
+        console.log(entryBodyElement);
+        var word = entryBodyElement.querySelectorAll('.headword .hw.dhw')[0].innerHTML || "NULL";
+        var type = entryBodyElement.querySelectorAll('.posgram .pos.dpos')[0].innerHTML || null;
+        if(type) type = "(" + type + ") ";
+
+        var usPhoneticElem = entryBodyElement.querySelectorAll('.us.dpron-i .pron.dpron')[0];
+        var usPhonetic = usPhoneticElem.textContent || usPhoneticElem.innerText || "empty";
+        var ukPhoneticElem = entryBodyElement.querySelectorAll('.uk.dpron-i .pron.dpron')[0];
+        var ukPhonetic = ukPhoneticElem.textContent || ukPhoneticElem.innerText || "empty";
+        var phonetic = "US " + usPhonetic + " - UK " + ukPhonetic;
+
+        return {cmd : 'phonetic-info', word: word, type: type, phonetic : phonetic};
     }
 
 
     function updateNoterPosition(x, y) {
-        y -= 10;
+        y -= 5;
         let currentScrollTop = document.documentElement.scrollTop;
         y += currentScrollTop;
         var bubble = document.getElementById('bubbble');
@@ -141,7 +172,7 @@ try {
                     bubble.style.top = '-1000px';
                 }, false);
             }
-        }, (4000));
+        }, (40000));
     }
 
     function unfade() {

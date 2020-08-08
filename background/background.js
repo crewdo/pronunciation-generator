@@ -68,7 +68,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, callback) {
                     type: "basic",
                     iconUrl: icon,
                     title: chrome.i18n.getMessage("appName"),
-                    message: message.word + "\n" + message.type + ": "  + message.phonetic
+                    message: message.word + " " + message.type + "\n" + message.phonetic
                 }, function () {});
         }
         Promise.resolve("").then(result => callback(result));

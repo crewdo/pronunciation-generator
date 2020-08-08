@@ -154,7 +154,7 @@
 
     .tabs__panels {
         position: relative;
-        margin-top: 30px;
+        margin-top: 15px;
     }
 
     .tabs__panel {
@@ -295,17 +295,23 @@
             <div class="tabs__panel">
                 <div class="tabs__panel-card">
                     <div class="service-connetor-content">
+                        <div style="margin-top: 5px; margin-bottom: 10px; text-align: center">
+                            <div class="form-group">
+                                <input type="checkbox" id="connector_bubble_status" checked>
+                                <label for="pronunciation_status" style="font-size: 16px">Show Pronouncing Bubble?</label>
+                            </div>
+                        </div>
                         <div class="box">
                             <select id="service_connector">
-                                <option value="skype">Skype</option>
                                 <option value="slack">Slack</option>
+                                <option value="skype">Skype</option>
                             </select>
                         </div>
                         <div class="group-identifier-container" style="width: 100%; text-align: center;">
-                            <div class="skype-connector connector-container" >
+                            <div class="skype-connector connector-container" style="display: none">
                                 <div style="text-align: center;cursor: pointer; margin-top: 15px;">
                                     <a target="_blank" href="https://join.skype.com/bot/8f70ea30-fdb1-4445-925d-bca7a4204a2c">
-                                        <img src="/content/images/connect.png" width="30%" style="display: block; margin: 10px auto">
+                                        <img src="/content/images/connect.png" width="26%" style="display: block; margin: 10px auto">
                                         <p style="font-size: 14px">Click to connect your Skype Account with Noting Bot</p></a></div>
                                 <div>
                                     <label style=" width: 100%;  display: block;  font-size: 16px;  margin-top: 50px; ">Conversation ID
@@ -316,7 +322,7 @@
                                     <a href="https://stackoverflow.com/questions/45862364/how-to-get-skype-group-chat-id/58405033#58405033"
                                        target="_blank">How to get Conversation ID?</a></div>
                             </div>
-                            <div class="slack-connector connector-container" style="display: none">
+                            <div class="slack-connector connector-container">
                                 <div style="text-align: center;cursor: pointer; margin-top: 15px;">
                                     <img src="/content/images/connect_slack.png" width="30%" style="display: block; margin: 10px auto">
                                     <label style=" width: 100%;  display: block;  font-size: 16px;  margin-top: 20px;  ">Slack Incoming
@@ -332,11 +338,11 @@
                                            placeholder="URYE320EQ"
                                            style="  display: block;  text-align: center;  width: 100%;  /* margin-top: 10px; */  padding: 8px;  border-radius: 50px;  border: 2px solid #5e7cd0;  padding-left: 20px;  padding-right: 20px;  box-sizing: border-box;  margin: 15px auto;  ">
                                     <a href="https://slack.com/intl/en-vn/help/articles/115005265063-Incoming-Webhooks-for-Slack"
-                                       target="_blank">How toGet your Member ID?</a>
+                                       target="_blank">How to get your Member ID?</a>
                                 </div>
                             </div>
 
-                            <div style="margin-top: 40px">
+                            <div style="margin-top: 20px">
                                 <div class="form-group">
                                     <input type="checkbox" id="translate_status" checked>
                                     <label for="translate_status">Note with translation?</label>
@@ -358,7 +364,6 @@
                                     <label for="pronunciation_status" style="font-size: 16px">Show Pronouncing Bubble?</label>
                                 </div>
                                 <i style="font-size: 12px">Only single word selecting will be shown the bubble</i>
-
                             </div>
                             <div style="margin-top: 30px;display: flex; align-items: center; font-size: 20px; justify-content: center;">
                                 <div style="margin-right: 20px">

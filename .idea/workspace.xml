@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8dd10fb2-c14f-40b3-b6a9-c66763aa755b" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/a.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/images/speaker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/images/note.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/background/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/background/background.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/js/inject/noter.js" beforeDir="false" afterPath="$PROJECT_DIR$/content/js/inject/noter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/popup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/popup.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,20 +18,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/popup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="394" column="31" selection-start-line="394" selection-start-column="20" selection-end-line="394" selection-end-column="31" />
+            <state relative-caret-position="240">
+              <caret line="362" column="91" lean-forward="true" selection-start-line="362" selection-start-column="91" selection-end-line="362" selection-end-column="91" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -60,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/popup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="356">
+              <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -69,20 +70,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/js/inject/noter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="55" column="48" lean-forward="true" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="303">
+              <caret line="102" column="5" lean-forward="true" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/background/background.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="117" column="41" lean-forward="true" selection-start-line="117" selection-start-column="41" selection-end-line="117" selection-end-column="41" />
+            <state relative-caret-position="175">
+              <caret line="70" column="53" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -93,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/a.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+            <state relative-caret-position="130">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -102,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="384">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -112,19 +110,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dummy</find>
-      <find>adjective</find>
-      <find>us</find>
-      <find>us</find>
-      <find>us</find>
-      <find>&lt;/span&gt;&lt;/span&gt;</find>
-      <find>fetch</find>
-      <find>speark</find>
-      <find>group</find>
-      <find>proc</find>
-      <find>pos dpos</find>
-      <find>posgram</find>
-      <find>notifi</find>
       <find>sendMe</find>
       <find>phonetic-info</find>
       <find>button</find>
@@ -135,13 +120,26 @@
       <find>js-a</find>
       <find>Shop</find>
       <find>border-box</find>
-      <find>save</find>
       <find>saveSetting</find>
       <find>hav</find>
       <find>have</find>
       <find>missing-info</find>
       <find>etting-saved</find>
       <find>missing</find>
+      <find>console.</find>
+      <find>phone</find>
+      <find>saved</find>
+      <find>save</find>
+      <find>UK</find>
+      <find>type</find>
+      <find>content/images/note.png</find>
+      <find>000</find>
+      <find>wid</find>
+      <find>connect.pn</find>
+      <find>Get y</find>
+      <find>style=&quot;display: none&quot;</find>
+      <find>pan</find>
+      <find>Show</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -153,12 +151,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/a.html" />
-        <option value="$PROJECT_DIR$/popup.html" />
         <option value="$PROJECT_DIR$/popup.js" />
-        <option value="$PROJECT_DIR$/content/js/inject/noter.js" />
         <option value="$PROJECT_DIR$/background/background.js" />
+        <option value="$PROJECT_DIR$/manifest.json" />
+        <option value="$PROJECT_DIR$/content/js/inject/noter.js" />
+        <option value="$PROJECT_DIR$/popup.html" />
       </list>
     </option>
   </component>
@@ -231,7 +229,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/images" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.scopes" />
@@ -241,8 +239,8 @@
       <recent name="$PROJECT_DIR$/content" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/content/images" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/content/icon" />
       <recent name="$PROJECT_DIR$/images" />
     </key>
@@ -273,7 +271,7 @@
       <workItem from="1596636381577" duration="4429000" />
       <workItem from="1596723497191" duration="7731000" />
       <workItem from="1596735409415" duration="467000" />
-      <workItem from="1596859384735" duration="17211000" />
+      <workItem from="1596859384735" duration="22560000" />
     </task>
     <task id="LOCAL-00001" summary="Done ex">
       <created>1596606588996</created>
@@ -415,17 +413,24 @@
       <option name="project" value="LOCAL" />
       <updated>1596864106671</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Speaker Implementation">
+      <created>1596895900542</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1596895900544</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44687000" />
+    <option name="totallyTimeSpent" value="50036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12875536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -437,7 +442,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.29619566" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.28125" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.5638587" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -505,7 +510,8 @@
     <MESSAGE value="Adding Service Connector" />
     <MESSAGE value="update" />
     <MESSAGE value="update popup" />
-    <option name="LAST_COMMIT_MESSAGE" value="update popup" />
+    <MESSAGE value="Speaker Implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Speaker Implementation" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/content/icon/icon16.png">
@@ -521,33 +527,65 @@
     <entry file="file://$PROJECT_DIR$/content/images/connect.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/cam.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/background/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="70" column="53" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/images/noter.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/a.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        <state relative-caret-position="130">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="384">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/js/inject/noter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="102" column="5" lean-forward="true" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/popup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="394" column="31" selection-start-line="394" selection-start-column="20" selection-end-line="394" selection-end-column="31" />
+        <state relative-caret-position="240">
+          <caret line="362" column="91" lean-forward="true" selection-start-line="362" selection-start-column="91" selection-end-line="362" selection-end-column="91" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -567,36 +605,6 @@
             <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/popup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/js/inject/noter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="55" column="48" lean-forward="true" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/cam.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/background/background.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="117" column="41" lean-forward="true" selection-start-line="117" selection-start-column="41" selection-end-line="117" selection-end-column="41" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
