@@ -1,14 +1,6 @@
 function saveSkypeChanges() {
 
     var conversationId = document.getElementById('group_identifier').value;
-    if (!conversationId) {
-        alert('Error: No value of conversation ID specified');
-        return;
-    }
-    if (conversationId.indexOf('@thread.skype') === -1) {
-        alert('Error: Conversation ID must contains "@thread.skype"');
-        return;
-    }
     sync({
         'service_connector': 'skype',
         'group_identifier': conversationId,
@@ -19,11 +11,6 @@ function saveSkypeChanges() {
 function saveSlackChanges() {
     var slackHook = document.getElementById('hook_identifier').value;
     var slackUserID = document.getElementById('userid_identifier').value;
-
-    if (!slackHook || !slackUserID) {
-        alert('Error: Incoming webhook & Slack member ID are required');
-        return;
-    }
     sync({
         'service_connector': 'slack',
         'hook_identifier': slackHook,
@@ -34,7 +21,7 @@ function saveSlackChanges() {
 
 function sync(data) {
     chrome.storage.sync.set(data, function() {
-        alert('Settings saved');
+       chrome.runtime.sendMessage(null, {cmd : 'setting-saved'}, {}, function (rs) {})
     });
 }
 

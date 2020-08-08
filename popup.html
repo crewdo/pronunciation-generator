@@ -100,7 +100,7 @@
         transform: rotate(45deg);
     }
 
-    *:before, *:after {
+    .form-group *:before, .form-group *:after {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -110,7 +110,6 @@
 
     .tabs {
         position: relative;
-        height: 100%;
     }
 
     .tabs__nav {
@@ -140,6 +139,7 @@
         cursor: pointer;
         font-size: 16px;
     }
+
     .tabs__nav-item.js-active {
         -webkit-transition-property: all;
         transition-property: all;
@@ -166,14 +166,15 @@
         -webkit-transform: scale(0.8);
         transform: scale(0.8);
         width: 100%;
-        opacity: 0;
+        display: none;
     }
+
     .tabs__panel.js-active {
         -webkit-transition: all .25s linear 0s;
         transition: all .25s linear 0s;
         -webkit-transform: scale(1);
         transform: scale(1);
-        opacity: 1;
+        display: unset;
     }
 
     .tabs__panel-card {
@@ -181,6 +182,7 @@
         display: flex;
         margin-bottom: 30px;
     }
+
     .tabs__panel-card:last-child {
         margin-bottom: 0;
     }
@@ -189,9 +191,11 @@
         width: 100%;
         margin-left: 30px;
     }
+
     .tabs__panel-content:first-child {
         margin-left: 0;
     }
+
     .tabs__panel-content:not(:last-child) {
         margin-right: 30px;
     }
@@ -200,33 +204,83 @@
         margin-bottom: 15px;
     }
 
-    li.js-active{
-    color: #fff;
+    li.js-active {
+        color: #fff;
         background-color: #1dd4c3;
         border-radius: 5px;
 
     }
 
 
-    .service-connetor-content{
+    .service-connetor-content {
         margin: 0 auto;
     }
 
-        #pronounce_service{
-            background-image: linear-gradient(to right, #e86404, #ffc800);
-        }
+    #pronounce_service {
+        background-image: linear-gradient(to right, #e86404, #ffc800);
+    }
 
-        #savePronunciationSetting{
-            background-image: linear-gradient(to right, #e86404, #ffc800) !important;
+    #savePronunciationSetting {
+        background-image: linear-gradient(to right, #e86404, #ffc800) !important;
 
-        }
-
+    }
+    /*Custom Radio*/
+    [type="radio"]:checked,
+    [type="radio"]:not(:checked) {
+        position: absolute;
+        left: -9999px;
+    }
+    [type="radio"]:checked + label,
+    [type="radio"]:not(:checked) + label
+    {
+        position: relative;
+        padding-left: 28px;
+        cursor: pointer;
+        line-height: 20px;
+        display: inline-block;
+        color: #666;
+    }
+    [type="radio"]:checked + label:before,
+    [type="radio"]:not(:checked) + label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 18px;
+        height: 18px;
+        border: 1px solid #ddd;
+        border-radius: 100%;
+        background: #fff;
+    }
+    [type="radio"]:checked + label:after,
+    [type="radio"]:not(:checked) + label:after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background: #0079bf;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        border-radius: 100%;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+    [type="radio"]:not(:checked) + label:after {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    [type="radio"]:checked + label:after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 
 
     </style>
 </head>
 <body>
-<div style="width: 460px; padding-bottom: 20px">
+<div style="width: 460px; height:500px; padding-bottom: 50px">
     <div class="tabs">
         <!--tabs navigation-->
         <div class="tabs__nav">
@@ -269,16 +323,16 @@
                                         Webhooks URL</label>
                                     <input name="hook_identifier" id="hook_identifier" class="group_identifier" value=""
                                            placeholder="https://hooks.slack.com/services/XXXX/YYYY/ZZZZ/"
-                                           style="  display: block;  text-align: center;  width: 85%;  /* margin-top: 10px; */  padding: 8px;  border-radius: 50px;  border: 2px solid #5e7cd0;  padding-left: 20px;  padding-right: 20px;  box-sizing: border-box;  margin: 15px auto;  ">
+                                           style="  display: block;  text-align: center;  width: 100%;  /* margin-top: 10px; */  padding: 8px;  border-radius: 50px;  border: 2px solid #5e7cd0;  padding-left: 20px;  padding-right: 20px;  box-sizing: border-box;  margin: 15px auto;  ">
                                     <a href="https://slack.com/intl/en-vn/help/articles/115005265063-Incoming-Webhooks-for-Slack"
                                        target="_blank">How to get Incoming Webhooks URL?</a>
 
                                     <label style=" width: 100%;  display: block;  font-size: 16px;  margin-top: 20px;  ">Your Slack Member ID</label>
                                     <input name="userid_identifier" id="userid_identifier" class="group_identifier" value=""
                                            placeholder="URYE320EQ"
-                                           style="  display: block;  text-align: center;  width: 85%;  /* margin-top: 10px; */  padding: 8px;  border-radius: 50px;  border: 2px solid #5e7cd0;  padding-left: 20px;  padding-right: 20px;  box-sizing: border-box;  margin: 15px auto;  ">
-                                    <img src="/content/images/slack_member_id.gif" width="80%" style="display: block; margin: 10px auto">
-                                    <i style="font-size: 12px">Get your Member ID</i>
+                                           style="  display: block;  text-align: center;  width: 100%;  /* margin-top: 10px; */  padding: 8px;  border-radius: 50px;  border: 2px solid #5e7cd0;  padding-left: 20px;  padding-right: 20px;  box-sizing: border-box;  margin: 15px auto;  ">
+                                    <a href="https://slack.com/intl/en-vn/help/articles/115005265063-Incoming-Webhooks-for-Slack"
+                                       target="_blank">How toGet your Member ID?</a>
                                 </div>
                             </div>
 
@@ -288,10 +342,7 @@
                                     <label for="translate_status">Note with translation?</label>
                                 </div>
                             </div>
-                            <button id="saveSetting"
-                                    style=" display: block; margin: 0 auto; padding: 5px; color: white; background-color: #d8d8d8; border: none; outline: none; border-radius: 30px; padding-top: 14px; padding-bottom: 14px; font-weight: 600; font-size: 15px; background-image: linear-gradient(to right, #138ae4, #00ceff); cursor: pointer; width: 245px;">
-                                Save
-                            </button>
+
                         </div>
                     </div>
                 </div>
@@ -309,6 +360,16 @@
                                 <i style="font-size: 12px">Only single word selecting will be shown the bubble</i>
 
                             </div>
+                            <div style="margin-top: 30px;display: flex; align-items: center; font-size: 20px; justify-content: center;">
+                                <div style="margin-right: 20px">
+                                    <input type="radio" id="us" name="us_uk" value="us">
+                                    <label for="us">US</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="uk" name="us_uk" checked value="uk">
+                                    <label for="uk">UK</label>
+                                </div>
+                            </div>
                             <label style="font-size: 16px; display: block; margin-top: 40px; margin-bottom: 10px; text-align: center">
                                 Pronouncing Service</label>
                             <div class="box" style="margin-top: 10px">
@@ -323,17 +384,19 @@
                             <div class="cam-img">
                                 <img src="/content/images/cam.png" width="30%" style="display: block; margin: 10px auto">
                             </div>
-                            <button id="savePronunciationSetting"
-                                    style=" display: block; margin: 0 auto; padding: 5px; color: white; background-color: #d8d8d8; border: none; outline: none; border-radius: 30px; padding-top: 14px; padding-bottom: 14px; font-weight: 600; font-size: 15px; background-image: linear-gradient(to right, #138ae4, #00ceff); cursor: pointer; width: 245px; margin-top: 40px">
-                                Save
-                            </button>
                         </div>
                 </div>
             </div>
 
         </div>
     </div>
-
+</div>
+    <div class="button-save-container" style="position: fixed; bottom: 18px; z-index: 10; left: 50%; transform: translateX(-50%);">
+        <button id="saveSetting"
+                style=" display: block; margin: 0 auto; padding: 5px; color: white; background-color: #d8d8d8; border: none; outline: none; border-radius: 30px; padding-top: 14px; padding-bottom: 14px; font-weight: 600; font-size: 15px; background-image: linear-gradient(to right, #138ae4, #00ceff); cursor: pointer; width: 245px; margin-top: 40px">
+            Save
+        </button>
+    </div>
 </div>
 <script src="popup.js"></script>
 </body>
