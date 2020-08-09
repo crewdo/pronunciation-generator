@@ -4,7 +4,6 @@ function saveSkypeChanges() {
     sync({
         'service_connector': 'skype',
         'group_identifier': conversationId,
-        'translate_status' : !!document.getElementById('translate_status').checked,
     });
 }
 
@@ -15,7 +14,6 @@ function saveSlackChanges() {
         'service_connector': 'slack',
         'hook_identifier': slackHook,
         'userid_identifier': slackUserID,
-        'translate_status' : !!document.getElementById('translate_status').checked,
     });
 }
 
@@ -28,6 +26,17 @@ function sync(data) {
 document.getElementById('saveSetting').addEventListener('click', function () {
     var connector = document.getElementById('service_connector').value;
     connector === 'skype' ? saveSkypeChanges() : saveSlackChanges();
+
+    //Saving Checkbox Options:
+    sync(
+        {
+            'translate_status' : !!document.getElementById('translate_status').checked,
+            'us_bubble' : !!document.getElementById('us').checked,
+            'uk_bubble' : !!document.getElementById('uk').checked,
+            'cloud' : !!document.getElementById('cloud').checked,
+        }
+    )
+
 
     //
 });
