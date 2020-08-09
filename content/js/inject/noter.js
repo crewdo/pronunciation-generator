@@ -1,17 +1,33 @@
 try {
     if (!document.getElementById("bubbble")) {
-        var iconUrl = chrome.extension.getURL("content/images/note.png");
-        var iconUS = chrome.extension.getURL("content/images/us.png");
-        var iconUK = chrome.extension.getURL("content/images/uk.png");
-        var elemAbs = document.createElement('div');
-        elemAbs.innerHTML =
-            '<img class="speaker" data-lang="us" src="' + iconUS + '" width="18px" style="margin-right: 1px">' +
-            '<img class="speaker" data-lang="uk" src="' + iconUK + '" width="18px" style="margin-right: 1px">' +
-            '<img id="noter" src="' + iconUrl + '" width="18px">';
+        chrome.storage.sync.get(
+            [   'cloud',
+                'us_bubble',
+                'uk_bubble',
+            ], function (statusObject) {
+                var elemAbs = document.createElement('div');
+                elemAbs.innerHTML = '';
 
-        elemAbs.id = 'bubbble';
-        elemAbs.style.cssText = 'position: absolute; top: -1000px; left: -1000px; z-index: 999999999999; cursor: pointer; font-size: 8px; text-align: center;';
-        document.body.appendChild(elemAbs);
+                if(!statusObject.hasOwnProperty('us_bubble') || statusObject.us_bubble){
+                    var iconUS = chrome.extension.getURL("content/images/us.png");
+                    elemAbs.innerHTML +=
+                        '<img class="speaker" data-lang="us" src="' + iconUS + '" width="18px" style="margin-right: 1px">';
+                }
+                if(!statusObject.hasOwnProperty('uk_bubble') || statusObject.uk_bubble){
+                    var iconUK = chrome.extension.getURL("content/images/uk.png");
+                    elemAbs.innerHTML +=
+                        '<img class="speaker" data-lang="uk" src="' + iconUK + '" width="18px" style="margin-right: 1px">';
+                }
+
+                if(statusObject.hasOwnProperty('cloud') && statusObject.cloud){
+                    var iconUrl = chrome.extension.getURL("content/images/note.png");
+                    elemAbs.innerHTML +=
+                        '<img id="noter" src="' + iconUrl + '" width="18px">';
+                }
+                elemAbs.id = 'bubbble';
+                elemAbs.style.cssText = 'position: absolute; top: -1000px; left: -1000px; z-index: 99999999999; cursor: pointer; font-size: 8px; text-align: center;';
+                document.body.appendChild(elemAbs);
+            });
     }
     var selectedText = "";
     document.getElementsByTagName('body')[0].addEventListener('click', function (evt) {
@@ -81,7 +97,14 @@ try {
     document.getElementById('noter').addEventListener('click', function () {
             fadeOnClick();
             if (selectedText) {
-                chrome.storage.sync.get(['group_identifier', 'translate_status', 'service_connector', 'hook_identifier', 'userid_identifier'], function (group) {
+                chrome.storage.sync.get(
+                    [
+                        'group_identifier',
+                        'translate_status',
+                        'service_connector',
+                        'hook_identifier',
+                        'userid_identifier',
+                    ], function (group) {
                     var err = false;
                     if (group.hasOwnProperty('service_connector')) {
                         if (group.service_connector === "slack" && (!!!group.hook_identifier || !!!group.userid_identifier)) err = true;

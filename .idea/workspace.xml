@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8dd10fb2-c14f-40b3-b6a9-c66763aa755b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/background/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/background/background.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/icon/icon128.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/icon/icon128.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/icon/icon16.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/icon/icon16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/icon/icon32.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/icon/icon32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/icon/icon48.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/icon/icon48.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/images/noter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/popup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/js/inject/noter.js" beforeDir="false" afterPath="$PROJECT_DIR$/content/js/inject/noter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/popup.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/popup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2084">
-              <caret line="327" column="38" lean-forward="true" selection-start-line="327" selection-start-column="38" selection-end-line="327" selection-end-column="38" />
+            <state relative-caret-position="272">
+              <caret line="316" column="63" lean-forward="true" selection-start-line="316" selection-start-column="63" selection-end-line="316" selection-end-column="63" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -60,46 +54,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/popup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2864">
-              <caret line="179" column="36" lean-forward="true" selection-start-line="179" selection-start-column="36" selection-end-line="179" selection-end-column="36" />
+            <state relative-caret-position="129">
+              <caret line="63" selection-start-line="63" selection-end-line="65" selection-end-column="19" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/js/inject/noter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="164" column="50" lean-forward="true" selection-start-line="164" selection-start-column="50" selection-end-line="164" selection-end-column="50" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#1;n#!!top" expanded="true" />
-                <element signature="e#1102#2060#0" />
-                <element signature="e#873#981#0" />
-                <element signature="e#1674#1699#0" />
-                <element signature="e#1783#1806#0" />
-                <element signature="e#1925#3034#0" />
-                <element signature="e#3178#3319#0" />
-                <element signature="e#3685#3701#0" />
-                <element signature="e#4993#5803#0" />
-                <element signature="e#5261#5480#0" />
-                <element signature="e#5502#6000#0" />
-                <element signature="e#6024#6346#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/images/us.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/manifest.json">
+        <entry file="file://$PROJECT_DIR$/content/js/inject/noter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="35" column="70" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+            <state relative-caret-position="381">
+              <caret line="42" column="40" lean-forward="true" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,17 +77,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ox-img</find>
-      <find>pronuncing-service-image</find>
-      <find>pronounce_service</find>
-      <find>US</find>
-      <find>UK</find>
-      <find>Connecotr</find>
-      <find>400</find>
-      <find>chrome.sync</find>
-      <find>speak</find>
-      <find>spea</find>
-      <find>radio</find>
       <find>classNa</find>
       <find>speaker</find>
       <find>noter</find>
@@ -135,9 +93,20 @@
       <find>tabs__nav-list</find>
       <find>which Bot has been added</find>
       <find>get</find>
-      <find>oxf</find>
       <find>noter.png</find>
       <find>icon192</find>
+      <find>oxf</find>
+      <find>saveSetting</find>
+      <find>saveS</find>
+      <find>bubble</find>
+      <find>cloid</find>
+      <find>connector_bubble_status</find>
+      <find>checked</find>
+      <find>sync</find>
+      <find>sync.get</find>
+      <find>translate_status</find>
+      <find>bubbble</find>
+      <find>iconUK</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -150,11 +119,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/a.html" />
-        <option value="$PROJECT_DIR$/popup.js" />
-        <option value="$PROJECT_DIR$/content/js/inject/noter.js" />
-        <option value="$PROJECT_DIR$/popup.html" />
         <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/background/background.js" />
+        <option value="$PROJECT_DIR$/popup.html" />
+        <option value="$PROJECT_DIR$/popup.js" />
+        <option value="$PROJECT_DIR$/content/js/inject/noter.js" />
       </list>
     </option>
   </component>
@@ -269,7 +238,7 @@
       <workItem from="1596636381577" duration="4429000" />
       <workItem from="1596723497191" duration="7731000" />
       <workItem from="1596735409415" duration="467000" />
-      <workItem from="1596859384735" duration="32853000" />
+      <workItem from="1596859384735" duration="34266000" />
     </task>
     <task id="LOCAL-00001" summary="Done ex">
       <created>1596606588996</created>
@@ -460,14 +429,29 @@
       <option name="project" value="LOCAL" />
       <updated>1596947196167</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Big update">
+      <created>1596954534974</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1596954534974</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Sync storage status">
+      <created>1596955127652</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1596955127653</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60329000" />
+    <option name="totallyTimeSpent" value="61742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21888413" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -481,7 +465,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.58967394" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32880434" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.5638587" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -556,7 +540,9 @@
     <MESSAGE value="beauti" />
     <MESSAGE value="Update connector and popup" />
     <MESSAGE value="popup edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="popup edit" />
+    <MESSAGE value="Big update" />
+    <MESSAGE value="Sync storage status" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sync storage status" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/content/icon/icon16.png">
@@ -604,48 +590,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/images/us.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/popup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2864">
-          <caret line="179" column="36" lean-forward="true" selection-start-line="179" selection-start-column="36" selection-end-line="179" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/js/inject/noter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="164" column="50" lean-forward="true" selection-start-line="164" selection-start-column="50" selection-end-line="164" selection-end-column="50" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#!!top" expanded="true" />
-            <element signature="e#1102#2060#0" />
-            <element signature="e#873#981#0" />
-            <element signature="e#1674#1699#0" />
-            <element signature="e#1783#1806#0" />
-            <element signature="e#1925#3034#0" />
-            <element signature="e#3178#3319#0" />
-            <element signature="e#3685#3701#0" />
-            <element signature="e#4993#5803#0" />
-            <element signature="e#5261#5480#0" />
-            <element signature="e#5502#6000#0" />
-            <element signature="e#6024#6346#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/icon/icon128.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/images/noter.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/images/us.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/popup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2084">
-          <caret line="327" column="38" lean-forward="true" selection-start-line="327" selection-start-column="38" selection-end-line="327" selection-end-column="38" />
+        <state relative-caret-position="272">
+          <caret line="316" column="63" lean-forward="true" selection-start-line="316" selection-start-column="63" selection-end-line="316" selection-end-column="63" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -677,10 +641,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manifest.json">
+    <entry file="file://$PROJECT_DIR$/popup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="35" column="70" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+        <state relative-caret-position="129">
+          <caret line="63" selection-start-line="63" selection-end-line="65" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/js/inject/noter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="42" column="40" lean-forward="true" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

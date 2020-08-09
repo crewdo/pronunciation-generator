@@ -18,8 +18,9 @@ function saveSlackChanges() {
 }
 
 function sync(data) {
-    chrome.storage.sync.set(data, function() {
-       chrome.runtime.sendMessage(null, {cmd : 'setting-saved'}, {}, function (rs) {})
+    chrome.storage.sync.set(data, function () {
+        chrome.runtime.sendMessage(null, {cmd: 'setting-saved'}, {}, function (rs) {
+        })
     });
 }
 
@@ -30,10 +31,10 @@ document.getElementById('saveSetting').addEventListener('click', function () {
     //Saving Checkbox Options:
     sync(
         {
-            'translate_status' : !!document.getElementById('translate_status').checked,
-            'us_bubble' : !!document.getElementById('us').checked,
-            'uk_bubble' : !!document.getElementById('uk').checked,
-            'cloud' : !!document.getElementById('cloud').checked,
+            'translate_status': !!document.getElementById('translate_status').checked,
+            'us_bubble': !!document.getElementById('us').checked,
+            'uk_bubble': !!document.getElementById('uk').checked,
+            'cloud': !!document.getElementById('cloud').checked,
         }
     )
 
@@ -43,40 +44,65 @@ document.getElementById('saveSetting').addEventListener('click', function () {
 
 function hideConnector() {
     var ele = document.getElementsByClassName('connector-container');
-    for (var i = 0; i < ele.length; i++ ) {
+    for (var i = 0; i < ele.length; i++) {
         ele[i].style.display = "none";
     }
 }
+
 document.getElementById('service_connector').addEventListener('change', function () {
     hideConnector();
     document.getElementsByClassName(this.value + '-connector')[0].style.display = 'block'
 });
 
-chrome.storage.sync.get(['group_identifier','translate_status', 'service_connector', 'userid_identifier', 'hook_identifier'], function (group) {
-    if(group.hasOwnProperty('group_identifier')) {
-        document.getElementById('group_identifier').value = group.group_identifier;
-    }
-    if(group.hasOwnProperty('translate_status')) {
-        document.getElementById('translate_status').checked = group.translate_status;
-    }
-    if(group.hasOwnProperty('service_connector')) {
-        var connnector = document.getElementById('service_connector');
-        connnector.value = group.service_connector;
-        connnector.dispatchEvent(new Event('change'));
-    }
-    if(group.hasOwnProperty('userid_identifier')) {
-        document.getElementById('userid_identifier').value = group.userid_identifier;
-    }
-    if(group.hasOwnProperty('hook_identifier')) {
-        document.getElementById('hook_identifier').value = group.hook_identifier;
-    }
-});
+chrome.storage.sync.get(
+    [
+        'group_identifier',
+        'translate_status',
+        'service_connector',
+        'userid_identifier',
+        'hook_identifier',
+        'cloud',
+        'uk_bubble',
+        'us_bubble'
+
+    ], function (group) {
+        if (group.hasOwnProperty('group_identifier')) {
+            document.getElementById('group_identifier').value = group.group_identifier;
+        }
+        if (group.hasOwnProperty('translate_status')) {
+            document.getElementById('translate_status').checked = group.translate_status;
+        }
+        if (group.hasOwnProperty('service_connector')) {
+            var connnector = document.getElementById('service_connector');
+            connnector.value = group.service_connector;
+            connnector.dispatchEvent(new Event('change'));
+        }
+        if (group.hasOwnProperty('userid_identifier')) {
+            document.getElementById('userid_identifier').value = group.userid_identifier;
+        }
+        if (group.hasOwnProperty('hook_identifier')) {
+            document.getElementById('hook_identifier').value = group.hook_identifier;
+        }
+
+        if (group.hasOwnProperty('cloud')) {
+            document.getElementById('cloud').value = group.cloud;
+        }
+
+        if (group.hasOwnProperty('us_bubble')) {
+            document.getElementById('us').value = group.us_bubble;
+        }
+
+        if (group.hasOwnProperty('uk_bubble')) {
+            document.getElementById('uk').value = group.uk_bubble;
+        }
+    });
 
 //POPUP Tab
 const DOM = {
     tabsNav: document.querySelector('.tabs__nav'),
     tabsNavItems: document.querySelectorAll('.tabs__nav-item'),
-    panels: document.querySelectorAll('.tabs__panel') };
+    panels: document.querySelectorAll('.tabs__panel')
+};
 
 
 //set active nav element
@@ -94,49 +120,38 @@ const setActiveItem = elem => {
 
 //find active nav element
 const findActiveItem = () => {
-
     let activeIndex = 0;
-
     for (let i = 0; i < DOM.tabsNavItems.length; i++) {
-
         if (DOM.tabsNavItems[i].classList.contains('js-active')) {
             activeIndex = i;
             break;
         }
-        ;
     }
 
     return activeIndex;
-
 };
 
 //find active nav elements parameters: left coord, width
 const findActiveItemParams = activeItemIndex => {
 
     const activeTab = DOM.tabsNavItems[activeItemIndex];
-
     //width of elem
     const activeItemWidth = activeTab.offsetWidth - 1;
-
     //left coord in the tab navigation
     const activeItemOffset_left = activeTab.offsetLeft;
-
     return [activeItemWidth, activeItemOffset_left];
 
 };
 
 //appending decoration block to an active nav element
 const appendDecorationNav = () => {
-
     //creating decoration element
     let decorationElem = document.createElement('div');
 
     decorationElem.classList.add('tabs__nav-decoration');
     decorationElem.classList.add('js-decoration');
-
     //appending decoration element to navigation
     DOM.tabsNav.append(decorationElem);
-
     //appending styles to decoration element
     return decorationElem;
 };
@@ -149,22 +164,15 @@ const styleDecorElem = (elem, decorWidth, decorOffset) => {
 
 //find active panel
 const findActivePanel = index => {
-
     return DOM.panels[index];
-
 };
 
 //set active panel class
 const setActivePanel = index => {
-
     DOM.panels.forEach(el => {
-
         el.classList.remove('js-active');
-
     });
-
     DOM.panels[index].classList.add('js-active');
-
 };
 
 //onload function
@@ -228,9 +236,9 @@ DOM.tabsNav.addEventListener('click', e => {
 //PronounSetting
 
 document.getElementById('pronounce_service').addEventListener('change', function () {
-   var imgs = document.getElementsByClassName('pronouncing-service-image');
-    for (var i = 0; i < imgs.length; i++){
+    var imgs = document.getElementsByClassName('pronouncing-service-image');
+    for (var i = 0; i < imgs.length; i++) {
         imgs[i].style.display = 'none';
     }
-   document.getElementsByClassName(this.value + '-img')[0].style.display = 'block';
+    document.getElementsByClassName(this.value + '-img')[0].style.display = 'block';
 });
