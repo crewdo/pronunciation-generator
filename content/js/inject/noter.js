@@ -61,9 +61,9 @@ try {
             if (s.toString()) {
                 selectedText = s.toString();
                 if (oRect.x !== 0 && oRect.y !== 0) {
-                    updateNoterPosition(oRect.x + oRect.width, oRect.y - 20);
+                    updateNoterPosition(oRect.x + oRect.width, oRect.y - 20, selectedText);
                 } else {
-                    updateNoterPosition(e.pageX, e.pageY - 20)
+                    updateNoterPosition(e.pageX, e.pageY - 20, selectedText)
                 }
             }
 
@@ -143,7 +143,8 @@ try {
         return {cmd: 'phonetic-info', word: word, type: type, phonetic: phonetic};
     }
 
-    function updateNoterPosition(x, y) {
+    function updateNoterPosition(x, y, selectedText) {
+        showSpeakersButton(1);
         y -= 5;
         let currentScrollTop = document.documentElement.scrollTop;
         y += currentScrollTop;
@@ -152,9 +153,19 @@ try {
         bubble.style.top = y + "px";
         unfade();
         fade();
+        var checkText = selectedText.trim();
+        if (checkText.split(" ").length !== 1) {
+            showSpeakersButton(0);
+        }
         return true
     }
 
+    function showSpeakersButton(isShow = 1) {
+        var speakers = document.getElementsByClassName('speaker');
+        for(var t = 0; t < speakers.length; t++) {
+            speakers[t].style.display = isShow ? 'unset' : 'none';
+        }
+    }
     function fadeOnClick() {
         var bubble = document.getElementById('bubbble');
         if (bubble) {

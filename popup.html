@@ -286,7 +286,7 @@
         <div class="tabs__nav">
             <ul class="tabs__nav-list">
                 <li class="tabs__nav-item js-active">Pronunciation Settings</li>
-                <li class="tabs__nav-item">Noting Connector</li>
+                <li class="tabs__nav-item">Cloud Connector</li>
             </ul>
         </div>
         <!--tabs panels-->
@@ -297,22 +297,15 @@
                 <div class="tabs__panel-card">
                     <div class="tabs__panel-content">
                         <div class="service-connetor-content" style="text-align: center">
-                            <div style="margin-top: 5px">
-                                <div class="form-group">
-                                    <input type="checkbox" id="pronunciation_status" checked>
-                                    <label for="pronunciation_status" style="font-size: 16px">Show Pronouncing Bubble?</label>
-                                </div>
-                                <i style="font-size: 12px">Only single word selecting will be shown the bubble</i>
-                            </div>
-                            <div style="margin-top: 30px;display: flex; align-items: center; font-size: 20px; justify-content: center;">
+                            <div style="margin-top: 30px; display: flex; align-items: center; font-size: 16px; justify-content: center;">
                                 <div class="form-group" style="display: flex">
                                     <div style="margin-right: 20px">
                                         <input type="checkbox" id="us" checked name="us" value="us">
-                                        <label for="us">Show US Bubble</label>
+                                        <label for="us">Show US Bubble?</label>
                                     </div>
                                     <div>
-                                        <input type="checkbox" id="uk" name="uk" value="uk">
-                                        <label for="uk">Show UK Bubble</label>
+                                        <input type="checkbox" id="uk" name="uk" checked value="uk">
+                                        <label for="uk">Show UK Bubble?</label>
                                     </div>
                                 </div>
 
@@ -326,10 +319,10 @@
                                 </select>
                             </div>
                             <div class="oxford-img pronouncing-service-image" style="display: none">
-                                <img src="/content/images/ox.png" width="30%" style="display: block; margin: 10px auto">
+                                <img src="/content/images/ox.png" width="60%" style="display: block; margin: 10px auto">
                             </div>
                             <div class="cambridge-img pronouncing-service-image">
-                                <img src="/content/images/cam.png" width="30%" style="display: block; margin: 10px auto">
+                                <img src="/content/images/cam.png" width="60%" style="display: block; margin: 10px auto">
                             </div>
                         </div>
                 </div>
@@ -356,8 +349,7 @@
                             <div class="skype-connector connector-container" style="display: none">
                                 <div style="text-align: center;cursor: pointer; margin-top: 15px;">
                                     <a target="_blank" href="https://join.skype.com/bot/8f70ea30-fdb1-4445-925d-bca7a4204a2c">
-                                        <img src="/content/images/connect.png" width="26%" style="display: block; margin: 10px auto">
-                                        <p style="font-size: 14px">Click to connect your Skype Account with Noting Bot</p></a></div>
+                                        <p style="font-size: 18px">Click to connect your Skype Account with Noting Bot</p></a></div>
                                 <div>
                                     <label style=" width: 100%;  display: block;  font-size: 16px;  margin-top: 50px; ">Conversation ID
                                         which Bot has been added</label>
@@ -369,7 +361,6 @@
                             </div>
                             <div class="slack-connector connector-container">
                                 <div style="text-align: center;cursor: pointer; margin-top: 15px;">
-                                    <img src="/content/images/connect_slack.png" width="30%" style="display: block; margin: 10px auto">
                                     <label style=" width: 100%;  display: block;  font-size: 16px;  margin-top: 20px;  ">Slack Incoming
                                         Webhooks URL</label>
                                     <input name="hook_identifier" id="hook_identifier" class="group_identifier" value=""
@@ -382,7 +373,7 @@
                                     <input name="userid_identifier" id="userid_identifier" class="group_identifier" value=""
                                            placeholder="URYE320EQ"
                                            style="  display: block;  text-align: center;  width: 100%;  /* margin-top: 10px; */  padding: 8px;  border-radius: 50px;  border: 2px solid #5e7cd0;  padding-left: 20px;  padding-right: 20px;  box-sizing: border-box;  margin: 15px auto;  ">
-                                    <a href="https://slack.com/intl/en-vn/help/articles/115005265063-Incoming-Webhooks-for-Slack"
+                                    <a href="https://help.workast.com/hc/en-us/articles/360027461274-How-to-find-a-Slack-user-ID"
                                        target="_blank">How to get your Member ID?</a>
                                 </div>
                             </div>
