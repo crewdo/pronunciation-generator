@@ -6,7 +6,8 @@ try {
         var elemAbs = document.createElement('div');
         elemAbs.innerHTML =
             '<img class="speaker" data-lang="us" src="' + iconUS + '" width="18px" style="margin-right: 1px">' +
-            '<img class="speaker" data-lang="uk" src="' + iconUK + '" width="18px">';
+            '<img class="speaker" data-lang="uk" src="' + iconUK + '" width="18px" style="margin-right: 1px">' +
+            '<img id="noter" src="' + iconUrl + '" width="18px">';
 
         elemAbs.id = 'bubbble';
         elemAbs.style.cssText = 'position: absolute; top: -1000px; left: -1000px; z-index: 999999999999; cursor: pointer; font-size: 8px; text-align: center;';
@@ -39,7 +40,6 @@ try {
                             chrome.runtime.sendMessage(null, {cmd: "word-not-found"}, {}, function (rs) {
                             });
                         }
-
                     });
                 }
             }
@@ -47,7 +47,6 @@ try {
     });
 
     document.getElementsByTagName('body')[0].addEventListener('click', function (e) {
-        console.log('hsahaha');
         s = window.getSelection();
         if (!s.toString()) {
             fadeOnClick();
@@ -103,7 +102,6 @@ try {
                 });
             }
         });
-
 
     function stripHtml(html) {
         var tmp = document.createElement("div");
