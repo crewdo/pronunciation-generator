@@ -60,6 +60,37 @@ try {
                 }
             }
         }
+        else if(evt.target.id === "noter") {
+            fadeOnClick();
+            if (selectedText) {
+                chrome.storage.sync.get(
+                    [
+                        'group_identifier',
+                        'translate_status',
+                        'service_connector',
+                        'hook_identifier',
+                        'userid_identifier',
+                    ], function (group) {
+                        var err = false;
+                        if (group.hasOwnProperty('service_connector')) {
+                            if (group.service_connector === "slack" && (!!!group.hook_identifier || !!!group.userid_identifier)) err = true;
+                            if (group.service_connector === "skype" && (!!!group.group_identifier)) err = true;
+                            if (!err) {
+                                chrome.runtime.sendMessage(null, {
+                                    cmd: 'process-note',
+                                    groupObj: group,
+                                    selectedText: selectedText
+                                }, {}, function (rs) {
+                                });
+                            }
+                        } else {
+                            err = true;
+                        }
+                        if (err) chrome.runtime.sendMessage(null, {cmd: 'missing-info'}, {}, function (rs) {
+                        })
+                    });
+            }
+        }
     });
 
     document.getElementsByTagName('body')[0].addEventListener('click', function (e) {
@@ -93,38 +124,6 @@ try {
     document.getElementById('bubbble').addEventListener('mouseout', function (e) {
         fade();
     });
-
-    document.getElementById('noter').addEventListener('click', function () {
-            fadeOnClick();
-            if (selectedText) {
-                chrome.storage.sync.get(
-                    [
-                        'group_identifier',
-                        'translate_status',
-                        'service_connector',
-                        'hook_identifier',
-                        'userid_identifier',
-                    ], function (group) {
-                    var err = false;
-                    if (group.hasOwnProperty('service_connector')) {
-                        if (group.service_connector === "slack" && (!!!group.hook_identifier || !!!group.userid_identifier)) err = true;
-                        if (group.service_connector === "skype" && (!!!group.group_identifier)) err = true;
-                        if (!err) {
-                            chrome.runtime.sendMessage(null, {
-                                cmd: 'process-note',
-                                groupObj: group,
-                                selectedText: selectedText
-                            }, {}, function (rs) {
-                            });
-                        }
-                    } else {
-                        err = true;
-                    }
-                    if (err) chrome.runtime.sendMessage(null, {cmd: 'missing-info'}, {}, function (rs) {
-                    })
-                });
-            }
-        });
 
     function stripHtml(html) {
         var tmp = document.createElement("div");
@@ -210,7 +209,7 @@ try {
                     bubble.style.top = '-1000px';
                 }, false);
             }
-        }, (400000));
+        }, (4000));
     }
 
     function unfade() {

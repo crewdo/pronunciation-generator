@@ -27,7 +27,6 @@ function sync(data) {
 document.getElementById('saveSetting').addEventListener('click', function () {
     var connector = document.getElementById('service_connector').value;
     connector === 'skype' ? saveSkypeChanges() : saveSlackChanges();
-
     //Saving Checkbox Options:
     sync(
         {
@@ -85,15 +84,15 @@ chrome.storage.sync.get(
         }
 
         if (group.hasOwnProperty('cloud')) {
-            document.getElementById('cloud').value = group.cloud;
+            document.getElementById('cloud').checked = group.cloud;
         }
 
         if (group.hasOwnProperty('us_bubble')) {
-            document.getElementById('us').value = group.us_bubble;
+            document.getElementById('us').checked = group.us_bubble;
         }
 
         if (group.hasOwnProperty('uk_bubble')) {
-            document.getElementById('uk').value = group.uk_bubble;
+            document.getElementById('uk').checked = group.uk_bubble;
         }
     });
 
