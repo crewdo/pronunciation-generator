@@ -1,7 +1,7 @@
 {
-  "name": "Skype English Noting",
-  "description": "Skype English Noting using a Skype Bot to send the translated message to a conversation",
-  "version": "1.0",
+  "name": "English Assistant",
+  "description": "English Assistant - Your life's essential Chrome extension",
+  "version": "1.1",
   "manifest_version": 2,
   "background": {
     "scripts": [
@@ -33,7 +33,7 @@
     "notifications"
   ],
   "web_accessible_resources": [
-    "content/images/noter.png", "content/images/note.png", "content/images/connect.png", "content/images/connect_slack.png", "content/images/ox.png", "content/images/cam.png",  "content/images/speaker.png", "content/images/slack_member_id.gif", "popup.html"
+    "content/images/noter.png", "content/images/note.png","content/images/us.png","content/images/uk.png", "content/images/connect.png", "content/images/connect_slack.png", "content/images/ox.png", "content/images/cam.png",  "content/images/speaker.png", "popup.html"
   ],
   "icons": {
     "128": "content/icon/icon128.png",
