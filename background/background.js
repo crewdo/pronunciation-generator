@@ -47,7 +47,7 @@ function findSecondText(fullText, find, tailOfFind) {
 
 
 chrome.runtime.onMessage.addListener(function(message, sender, callback) {
-    var icon = chrome.extension.getURL("content/images/noter.png");
+    var icon = chrome.extension.getURL("content/icon/icon128.png");
     var cmd = message.cmd.toLowerCase();
     if(cmd === 'missing-info'){
         chrome.notifications.create(null,

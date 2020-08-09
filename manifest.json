@@ -33,7 +33,7 @@
     "notifications"
   ],
   "web_accessible_resources": [
-    "content/images/noter.png", "content/images/note.png","content/images/us.png","content/images/uk.png", "content/images/connect.png", "content/images/connect_slack.png", "content/images/ox.png", "content/images/cam.png",  "content/images/speaker.png", "popup.html"
+    "content/icon/icon128.png", "content/images/note.png","content/images/us.png","content/images/uk.png", "content/images/connect.png", "content/images/connect_slack.png", "content/images/ox.png", "content/images/cam.png",  "content/images/speaker.png", "popup.html"
   ],
   "icons": {
     "128": "content/icon/icon128.png",

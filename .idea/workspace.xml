@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8dd10fb2-c14f-40b3-b6a9-c66763aa755b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/js/inject/noter.js" beforeDir="false" afterPath="$PROJECT_DIR$/content/js/inject/noter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/background/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/background/background.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/icon/icon128.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/icon/icon128.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/icon/icon16.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/icon/icon16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/icon/icon32.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/icon/icon32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/icon/icon48.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/icon/icon48.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/images/noter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/popup.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/popup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="328" column="18" lean-forward="true" selection-start-line="328" selection-start-column="18" selection-end-line="328" selection-end-column="18" />
+            <state relative-caret-position="2084">
+              <caret line="327" column="38" lean-forward="true" selection-start-line="327" selection-start-column="38" selection-end-line="327" selection-end-column="38" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -89,11 +95,11 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="86">
+              <caret line="35" column="70" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -102,15 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>content/images/note.png</find>
-      <find>000</find>
-      <find>wid</find>
-      <find>connect.pn</find>
-      <find>Get y</find>
-      <find>style=&quot;display: none&quot;</find>
-      <find>pan</find>
-      <find>Show</find>
-      <find>20px</find>
       <find>ox-img</find>
       <find>pronuncing-service-image</find>
       <find>pronounce_service</find>
@@ -131,7 +128,16 @@
       <find>#uk</find>
       <find>Connector</find>
       <find>connect.p</find>
+      <find>Noting</find>
+      <find>Click</find>
+      <find>460</find>
+      <find>40px</find>
+      <find>tabs__nav-list</find>
+      <find>which Bot has been added</find>
+      <find>get</find>
       <find>oxf</find>
+      <find>noter.png</find>
+      <find>icon192</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -144,11 +150,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/a.html" />
-        <option value="$PROJECT_DIR$/background/background.js" />
         <option value="$PROJECT_DIR$/popup.js" />
-        <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/content/js/inject/noter.js" />
         <option value="$PROJECT_DIR$/popup.html" />
+        <option value="$PROJECT_DIR$/manifest.json" />
+        <option value="$PROJECT_DIR$/background/background.js" />
       </list>
     </option>
   </component>
@@ -221,7 +227,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/icon" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.scopes" />
@@ -231,9 +237,9 @@
       <recent name="$PROJECT_DIR$/content" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/icon" />
       <recent name="$PROJECT_DIR$/content/images" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/content/icon" />
       <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
@@ -263,7 +269,7 @@
       <workItem from="1596636381577" duration="4429000" />
       <workItem from="1596723497191" duration="7731000" />
       <workItem from="1596735409415" duration="467000" />
-      <workItem from="1596859384735" duration="30590000" />
+      <workItem from="1596859384735" duration="32853000" />
     </task>
     <task id="LOCAL-00001" summary="Done ex">
       <created>1596606588996</created>
@@ -440,15 +446,28 @@
       <option name="project" value="LOCAL" />
       <updated>1596945942052</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Update connector and popup">
+      <created>1596946846776</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1596946846777</updated>
+    </task>
+    <task id="LOCAL-00027" summary="popup edit">
+      <created>1596947196166</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1596947196167</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58066000" />
+    <option name="totallyTimeSpent" value="60329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21888413" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -462,7 +481,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.25543478" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.58967394" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.5638587" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -535,7 +554,9 @@
     <MESSAGE value="Option of pronoune" />
     <MESSAGE value="Update speaker" />
     <MESSAGE value="beauti" />
-    <option name="LAST_COMMIT_MESSAGE" value="beauti" />
+    <MESSAGE value="Update connector and popup" />
+    <MESSAGE value="popup edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="popup edit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/content/icon/icon16.png">
@@ -569,16 +590,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/content/images/us.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/images/noter.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/images/ox.png">
       <provider selected="true" editor-type-id="images" />
@@ -625,10 +636,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/content/icon/icon128.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/images/noter.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/popup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="328" column="18" lean-forward="true" selection-start-line="328" selection-start-column="18" selection-end-line="328" selection-end-column="18" />
+        <state relative-caret-position="2084">
+          <caret line="327" column="38" lean-forward="true" selection-start-line="327" selection-start-column="38" selection-end-line="327" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -657,6 +674,13 @@
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="35" column="70" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
         </state>
       </provider>
     </entry>
