@@ -1,6 +1,6 @@
 {
-  "name": "English Assistant",
-  "description": "English Assistant - Your life's essential Chrome extension",
+  "name": "English Learning Assistant",
+  "description": "English Learning Assistant - Your life's essential Chrome extension",
   "version": "1.1",
   "manifest_version": 2,
   "background": {
