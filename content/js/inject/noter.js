@@ -8,7 +8,14 @@ try {
             '<img id="speaker" src="' + iconSpeakerUrl + '" width="20px">';
 
         elemAbs.id = 'bubbble';
-        elemAbs.style.cssText = 'background: white; border-radius: 56px;height: 21px; position: absolute; top: -1000px; left: -1000px; z-index: 9999999999999; cursor: pointer; font-size: 8px; text-align: center';
+        elemAbs.style.cssText = 'background: white; border-radius: 56px;height: 21px; position: absolute; top: -1000px; left: -1000px; z-index: 9999999999999; cursor: pointer; font-size: 8px; text-align: center;';
+
+        if(1) {
+            elemAbs.style.cssText += 'width: 49px;'
+        }
+        else {
+            elemAbs.style.cssText += 'width: 34px;'
+        }
         document.body.appendChild(elemAbs);
     }
 
@@ -172,7 +179,7 @@ try {
                     bubble.style.top = '-1000px';
                 }, false);
             }
-        }, (40000));
+        }, (400000));
     }
 
     function unfade() {

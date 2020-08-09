@@ -285,20 +285,62 @@
         <!--tabs navigation-->
         <div class="tabs__nav">
             <ul class="tabs__nav-list">
-                <li class="tabs__nav-item js-active">Service Connector</li>
-                <li class="tabs__nav-item">Pronunciation Settings</li>
+                <li class="tabs__nav-item js-active">Pronunciation Settings</li>
+                <li class="tabs__nav-item">Noting Connector</li>
             </ul>
         </div>
         <!--tabs panels-->
         <div class="tabs__panels">
             <!--single panel-->
+
+            <div class="tabs__panel">
+                <div class="tabs__panel-card">
+                    <div class="tabs__panel-content">
+                        <div class="service-connetor-content" style="text-align: center">
+                            <div style="margin-top: 5px">
+                                <div class="form-group">
+                                    <input type="checkbox" id="pronunciation_status" checked>
+                                    <label for="pronunciation_status" style="font-size: 16px">Show Pronouncing Bubble?</label>
+                                </div>
+                                <i style="font-size: 12px">Only single word selecting will be shown the bubble</i>
+                            </div>
+                            <div style="margin-top: 30px;display: flex; align-items: center; font-size: 20px; justify-content: center;">
+                                <div style="margin-right: 20px">
+                                    <input type="radio" id="us" name="us_uk" value="us" checked>
+                                    <label for="us">US</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="uk" name="us_uk" value="uk">
+                                    <label for="uk">UK</label>
+                                </div>
+                            </div>
+                            <label style="font-size: 16px; display: block; margin-top: 40px; margin-bottom: 10px; text-align: center">
+                                Pronouncing Service</label>
+                            <div class="box" style="margin-top: 10px">
+                                <select id="pronounce_service">
+                                    <option value="cambridge">Cambridge Dictionary</option>
+                                    <option value="oxford">Oxford Dictionary</option>
+                                </select>
+                            </div>
+                            <div class="oxford-img pronouncing-service-image" style="display: none">
+                                <img src="/content/images/ox.png" width="30%" style="display: block; margin: 10px auto">
+                            </div>
+                            <div class="cambridge-img pronouncing-service-image">
+                                <img src="/content/images/cam.png" width="30%" style="display: block; margin: 10px auto">
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+
             <div class="tabs__panel">
                 <div class="tabs__panel-card">
                     <div class="service-connetor-content">
                         <div style="margin-top: 5px; margin-bottom: 10px; text-align: center">
                             <div class="form-group">
                                 <input type="checkbox" id="connector_bubble_status" checked>
-                                <label for="pronunciation_status" style="font-size: 16px">Show Pronouncing Bubble?</label>
+                                <label for="connector_bubble_status" style="font-size: 16px">Show Noting Bubble?</label>
                             </div>
                         </div>
                         <div class="box">
@@ -353,48 +395,8 @@
                     </div>
                 </div>
             </div>
-            <!--single panel-->
-            <div class="tabs__panel">
-                <div class="tabs__panel-card">
-                    <div class="tabs__panel-content">
-                        <div class="service-connetor-content" style="text-align: center">
-                            <div style="margin-top: 20px">
-                                <div class="form-group">
-                                    <input type="checkbox" id="pronunciation_status" checked>
-                                    <label for="pronunciation_status" style="font-size: 16px">Show Pronouncing Bubble?</label>
-                                </div>
-                                <i style="font-size: 12px">Only single word selecting will be shown the bubble</i>
-                            </div>
-                            <div style="margin-top: 30px;display: flex; align-items: center; font-size: 20px; justify-content: center;">
-                                <div style="margin-right: 20px">
-                                    <input type="radio" id="us" name="us_uk" value="us">
-                                    <label for="us">US</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="uk" name="us_uk" checked value="uk">
-                                    <label for="uk">UK</label>
-                                </div>
-                            </div>
-                            <label style="font-size: 16px; display: block; margin-top: 40px; margin-bottom: 10px; text-align: center">
-                                Pronouncing Service</label>
-                            <div class="box" style="margin-top: 10px">
-                                <select id="pronounce_service">
-                                    <option value="oxford">Oxford Dictionary</option>
-                                    <option value="cambridge">Cambridge Dictionary</option>
-                                </select>
-                            </div>
-                            <div class="ox-img" style="display: none">
-                                <img src="/content/images/ox.png" width="30%" style="display: block; margin: 10px auto">
-                            </div>
-                            <div class="cam-img">
-                                <img src="/content/images/cam.png" width="30%" style="display: block; margin: 10px auto">
-                            </div>
-                        </div>
-                </div>
-            </div>
 
         </div>
-    </div>
 </div>
     <div class="button-save-container" style="position: fixed; bottom: 18px; z-index: 10; left: 50%; transform: translateX(-50%);">
         <button id="saveSetting"

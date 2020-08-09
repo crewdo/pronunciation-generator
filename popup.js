@@ -28,6 +28,8 @@ function sync(data) {
 document.getElementById('saveSetting').addEventListener('click', function () {
     var connector = document.getElementById('service_connector').value;
     connector === 'skype' ? saveSkypeChanges() : saveSlackChanges();
+
+    //
 });
 
 function hideConnector() {
@@ -212,4 +214,14 @@ DOM.tabsNav.addEventListener('click', e => {
 
     }
 
+});
+
+//PronounSetting
+
+document.getElementById('pronounce_service').addEventListener('change', function () {
+   var imgs = document.getElementsByClassName('pronouncing-service-image');
+    for (var i = 0; i < imgs.length; i++){
+        imgs[i].style.display = 'none';
+    }
+   document.getElementsByClassName(this.value + '-img')[0].style.display = 'block';
 });
